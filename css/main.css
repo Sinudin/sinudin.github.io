@@ -285,7 +285,7 @@ a {
 
 .logoO {
   max-height: 200px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .logoU {
@@ -295,6 +295,15 @@ a {
 
 .logopos {
   text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .logoU {
+    margin-top: 40px;
+  }
+}
+.xs {
+  margin-bottom: 100px;
 }
 
 /* Общие стили */
@@ -812,7 +821,7 @@ span.sim-dot {
   background: #2980b9;
 }
 
-.tab-content {
+.tab-contentZ {
   max-height: 0;
   overflow: hidden;
   color: var(--main-color);
@@ -821,16 +830,16 @@ span.sim-dot {
   transition: max-height 0.7s;
 }
 
-.blue .tab-content {
+.blue .tab-contentZ {
   background: #3498db;
 }
 
-.tab-content p {
+.tab-contentZ p {
   margin: 1em;
 }
 
 /* :checked */
-.tab input:checked ~ .tab-content {
+.tab input:checked ~ .tab-contentZ {
   max-height: 1000vh;
 }
 
@@ -1077,6 +1086,11 @@ span.sim-dot {
     display: none;
   }
 }
+.blyad {
+  height: 40px;
+  visibility: hidden;
+}
+
 .tabs-container {
   position: relative;
   background-image: url("../img/servfon.png");
@@ -1091,9 +1105,10 @@ span.sim-dot {
 /* tabs names */
 .tabs-container label {
   position: relative;
-  padding: 10px;
-  padding-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 10px;
   display: block;
   font-size: 17px;
   color: #ffffff;
@@ -1106,7 +1121,7 @@ span.sim-dot {
 
 /* Hover effect on tabs names */
 .tabs-container label:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Content area for tabs */
@@ -1116,6 +1131,7 @@ span.sim-dot {
   width: calc(100% - 400px);
   min-height: 90vh;
   padding: 15px;
+  padding-top: 0px;
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1170,13 +1186,14 @@ input[name=tab]:checked + .tab-content {
 }
 @media only screen and (max-width: 960px) {
   .tabs-container {
-    max-height: 32.5vh;
+    max-height: 41vh;
     width: 100%;
   }
   .tabs-container label {
     font-size: 90%;
   }
   .tab-content {
+    margin-top: 0px;
     padding: 0px;
     max-height: 100%;
     font-size: 110%;
