@@ -754,6 +754,14 @@ span.sim-dot {
   margin-right: -100px;
 }
 
+@media only screen and (max-width: 960px) {
+  .contfon {
+    display: none;
+  }
+  .compimg {
+    display: none;
+  }
+}
 .img1 {
   position: relative;
   margin-top: -100%;
@@ -1163,5 +1171,11 @@ span.sim-dot {
 
 .itc-slider-indicator-active {
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media only screen and (max-width: 960px) {
+  .itc-slider {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
