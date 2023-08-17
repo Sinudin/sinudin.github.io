@@ -1,0 +1,15 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Muller", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --offset: 32px;
+  // colors
+  --main-color: #000000;
+  --accent-color: #cc0000;
+  --active-color:  #ff0800;
+  --light-color: #ffffff;
+}

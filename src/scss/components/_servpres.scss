@@ -1,0 +1,53 @@
+.fs {
+  padding-top: 0px;
+  min-height: 200px;
+  background-image: url("../img/fs.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    grid-column: 12 span;
+  }
+
+  &__title {
+    font-size: 2x;
+
+  }
+}
+.fs_desc {
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.fs_desc1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.logoZ {
+  max-width: 100px;
+}
+
+.comtxt {
+  font-size: 20px;
+  max-width: 800px;
+  letter-spacing: 0.5px;
+  background-color: rgba(245, 245, 245, 0.603);
+  margin-bottom: 0px;
+
+}
+
+.compimg {
+  position: relative;
+  width: 30%;
+  margin-right: -100px;
+}
+.compdiv {
+  display: flex;
+}
+.contfon {
+  position: relative;
+  width: 30%;
+  margin-right: -100px;
+}

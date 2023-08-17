@@ -1,0 +1,29 @@
+.fs {
+  padding-top: 0px;
+  min-height: 500px;
+  margin-top: -60px;
+  background-image: url("../img/fs.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    grid-column: 12 span;
+  }
+
+  &__title {
+    font-size: 5px;
+    visibility: hidden;
+  }
+}
+.logoO {
+  max-height: 200px;
+  margin-top: 80px;
+}
+.logoU {
+  max-height: 170px;
+  margin-top: 0px;
+}
+.logopos {
+  text-align: center;
+}

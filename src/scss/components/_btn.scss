@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--main-color);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  visibility: hidden;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    background-color: var(--accent-color);
+  }
+
+  &:active {
+    background-color: var(--active-color)
+  }
+}
+
+.btn.focus-visible {
+  border-color: var(--main-color)
+}

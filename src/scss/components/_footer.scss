@@ -1,0 +1,31 @@
+.footer__right {
+  text-align: left;
+  margin-left: 700px;
+  margin-top: -80px;
+}
+.navend {
+  margin-left: -70px;
+  margin-bottom: 0px;
+}
+.logox {
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .navend {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .footer__right {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
