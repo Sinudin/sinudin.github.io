@@ -141,6 +141,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _vendor_itc_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/itc-slider.js */ "./src/js/vendor/itc-slider.js");
 /* harmony import */ var _vendor_itc_slider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_itc_slider_js__WEBPACK_IMPORTED_MODULE_1__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './vendor/app.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 
 

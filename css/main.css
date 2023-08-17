@@ -721,7 +721,7 @@ span.sim-dot {
 
 .fs_desc1 {
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .logoZ {
@@ -874,107 +874,6 @@ span.sim-dot {
 
 .tab-one {
   background-image: url("../img/us1.jpg");
-}
-
-.tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #fff;
-  opacity: 0.8;
-}
-
-.tabs__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-ordinal-group: 1;
-  -ms-flex-order: 0;
-  order: 0;
-  white-space: nowrap;
-  margin-bottom: 15px;
-  background-image: url("../img/servfon.png");
-  background-size: cover;
-}
-
-.tabs__links > a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  padding: 6px 10px;
-  background-color: white;
-  text-align: left;
-  -webkit-box-shadow: 0 2px 4px 0 rgb(218, 218, 218);
-  box-shadow: 0 2px 4px 0 rgb(218, 218, 218);
-  margin-bottom: 12px;
-}
-
-.tabs__links > a:hover {
-  background-color: var(--accent-color);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  color: #ffffff;
-}
-
-.tabs > #content-1:target ~ .tabs__links > a[href="#content-1"],
-.tabs > #content-2:target ~ .tabs__links > a[href="#content-2"],
-.tabs > #content-3:target ~ .tabs__links > a[href="#content-3"],
-.tabs > #content-4:target ~ .tabs__links > a[href="#content-4"],
-.tabs > #content-5:target ~ .tabs__links > a[href="#content-5"],
-.tabs > #content-6:target ~ .tabs__links > a[href="#content-6"] {
-  background-color: var(--accent-color);
-  color: #fff;
-  cursor: default;
-}
-
-.tabs > div:not(.tabs__links) {
-  display: none;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-@media (min-width: 576px) {
-  .tabs {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  .tabs__links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  .tabs__links > a {
-    -webkit-box-shadow: 0 2px 4px 0 rgb(218, 218, 218);
-    box-shadow: 0 2px 4px 0 rgb(218, 218, 218);
-    margin-bottom: 12px;
-  }
-  .tabs__links > a:last-child {
-    margin-bottom: 0;
-  }
-  .tabs > div:not(.tabs__links) {
-    padding-left: 15px;
-  }
-}
-.tabs > div:target {
-  display: block;
 }
 
 .logoZ {
@@ -1176,6 +1075,112 @@ span.sim-dot {
 @media only screen and (max-width: 960px) {
   .itc-slider {
     display: none;
+  }
+}
+.tabs-container {
+  position: relative;
+  background-image: url("../img/servfon.png");
+  background-size: cover;
+  width: 400px;
+  height: 90vh;
+  white-space: nowrap;
+  float: left;
+  z-index: 20;
+}
+
+/* tabs names */
+.tabs-container label {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  font-size: 17px;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hover effect on tabs names */
+.tabs-container label:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Content area for tabs */
+.tab-content {
+  position: relative;
+  background: rgb(255, 255, 255);
+  width: calc(100% - 400px);
+  min-height: 90vh;
+  padding: 15px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 19;
+  display: none;
+}
+
+.tab-content:after {
+  content: "";
+  clear: both;
+}
+
+/* Hide input radio from users */
+input[name=tab] {
+  display: none;
+}
+
+/* Show tab when input checked */
+input[name=tab]:checked + .tab-content {
+  display: block;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+}
+
+.fs__contentz {
+  background-image: url("../img/fs.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Slide animation for tab contents */
+@-webkit-keyframes slide {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .tabs-container {
+    max-height: 32.5vh;
+    width: 100%;
+  }
+  .tabs-container label {
+    font-size: 90%;
+  }
+  .tab-content {
+    padding: 0px;
+    max-height: 100%;
+    font-size: 110%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
