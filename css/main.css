@@ -268,7 +268,7 @@ a {
 .fs {
   padding-top: 0px;
   min-height: 500px;
-  margin-top: -60px;
+  margin-bottom: 55px;
   background-image: url("../img/fs.jpg");
   background-position: center;
   background-size: cover;
@@ -285,12 +285,12 @@ a {
 
 .logoO {
   max-height: 200px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .logoU {
   max-height: 170px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .logopos {
