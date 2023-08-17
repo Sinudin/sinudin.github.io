@@ -826,8 +826,8 @@ span.sim-dot {
   overflow: hidden;
   color: var(--main-color);
   background: rgb(245, 245, 245);
-  -webkit-transition: max-height 0.7s;
-  transition: max-height 0.7s;
+  -webkit-transition: max-height 2.7s ease-in-out;
+  transition: max-height 2.7s ease-in-out;
 }
 
 .blue .tab-contentZ {
@@ -1095,7 +1095,7 @@ span.sim-dot {
   position: relative;
   background-image: url("../img/servfon.png");
   background-size: cover;
-  width: 400px;
+  width: 420px;
   height: 90vh;
   white-space: nowrap;
   float: left;
@@ -1128,7 +1128,7 @@ span.sim-dot {
 .tab-content {
   position: relative;
   background: rgb(255, 255, 255);
-  width: calc(100% - 400px);
+  width: calc(100% - 420px);
   min-height: 90vh;
   padding: 15px;
   padding-top: 0px;
